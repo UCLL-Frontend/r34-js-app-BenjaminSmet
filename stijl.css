@@ -452,3 +452,114 @@ nav ul li a:hover {
       font-size: 1.6em;
     }
 }
+
+/* Algemene styling voor de bewerk-knop */
+.edit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0feffd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.edit-btn:hover {
+    background-color: #008c8d;
+}
+  
+#movie-list li .edit-btn {
+    position: absolute;
+    top: 0.5rem;
+    left: 4.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+}
+  
+#movie-list li:hover .edit-btn,
+#viewed-movie-list li:hover .edit-btn {
+    display: block;
+}
+  
+#movie-list li .edit-btn i, 
+#viewed-movie-list li .edit-btn i {
+    font-size: 20px;
+    color: var(--text-color);
+}
+  
+#movie-list li .edit-btn:hover i,
+#viewed-movie-list li .edit-btn:hover i {
+    color: var(--primary-color);
+}
+  
+/* Algemene styling voor het edit formulier */
+.edit-movie-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+.edit-movie-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+  
+/* Algemene stijlen voor de invoervelden */
+.edit-movie-form input[type="text"],
+.edit-movie-form input[type="number"],
+.edit-movie-form select {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+  
+  
+/* Edit knop */
+.edit-movie-form button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #0feffd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+  
+.edit-movie-form button:hover {
+    background-color: #008c8d;
+}
+  
+.edit-movie-form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.edit-movie-form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .edit-movie-form {
+      padding: 10px;
+    }
+    .edit-movie-form h1 {
+      font-size: 1.6em;
+    }
+}

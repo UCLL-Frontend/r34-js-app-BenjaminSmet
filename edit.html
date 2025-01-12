@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Movie</title>
+    <link rel="stylesheet" href="stijl.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add.html">Nieuwe film/serie toevoegen</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Edit Movie</h1>
+
+    <form class="edit-movie-form" id="edit-movie-form">
+        <!-- Titel van de film/serie -->
+        <input id="movie-title" type="text" placeholder="Titel" required />
+        
+        <!-- Genre van de film/serie -->
+        <select id="movie-genre" required>
+            <option value="">Kies een Genre</option>
+            <option value="Action">Actie</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Thriller</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Romance">Romantiek</option>
+            <option value="Adventure">Avontuur</option>
+            <option value="Animation">Animatie</option>
+            <option value="Family">Familie</option>
+            <option value="Fantasy">Fantasie</option>
+            <option value="Documentary">Documentaire</option>
+            <option value="War">Oorlog</option>
+            <option value="Reality">Reality</option>
+        </select>
+        
+        <!-- Jaar van de film (alleen voor films) -->
+        <div id="year-container">
+          <input id="movie-year" type="number" placeholder="Jaar" />
+        </div>
+        
+        <!-- Type (film of serie) -->
+        <select id="movie-type">
+          <option value="movie">Film</option>
+          <option value="serie">Serie</option>
+        </select>
+        
+        <!-- Afbeelding -->
+        <label for="image-type">Afbeelding:</label>
+        <select id="image-type">
+          <option value="url">URL</option>
+          <option value="file">Bestand</option>
+        </select>
+        <input id="image-url" type="url" placeholder="Afbeeldings-URL" disabled />
+        <input id="image-file" type="file" disabled />
+        
+        <!-- Seizoenen en afleveringen (alleen voor series) -->
+        <div id="series-container" style="display:none;">
+          <input id="seasons" type="number" placeholder="Aantal seizoenen" />
+          <input id="episodes" type="number" placeholder="Aantal afleveringen" />
+        </div>
+      
+        <!-- Verzendknop -->
+        <button type="submit">Bewerk Film/Serie</button>
+      </form>
+      
+
+    <script src="edit.js"></script>
+</body>
+</html>
