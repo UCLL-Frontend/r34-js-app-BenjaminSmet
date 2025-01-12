@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film/Serie Verlanglijst</title>
+    <link rel="stylesheet" href="stijl.css">
+    <script src="https://kit.fontawesome.com/b3e2c02965.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="add.html">Nieuwe film/serie toevoegen</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+      <h1>Welkom bij je Film/Serie Verlanglijst</h1>
+      <p>Hier kun je films en series toevoegen die je graag wilt kijken. Maak een lijst van je favoriete films en series, en markeer ze als bekeken wanneer je ze hebt gezien!</p>
+  </section>
+
+  <!-- Filter sectie -->
+  <section class="filter-section">
+    <label for="filter-type">Filter op Type:</label>
+    <!-- Filter dropdowns -->
+    <select id="filter-type">
+      <option value="all">Alle</option>
+      <option value="movie">Film</option>
+      <option value="serie">Serie</option>
+    </select>
+    <label for="filter-genre">Filter op Genre:</label>
+    <select id="filter-genre">
+      <option value="all">Alle Genres</option>
+    </select>
+  </section>
+
+  <section class="container">
+    <div class="section-header">
+      <h2 id="movie-list-title">Te Kijken Films en Series</h2>
+    </div>
+    <div class="section-body">
+      <ul id="movie-list"></ul>
+    </div>
+  </section>
+    
+  <section class="container">
+    <div class="section-header">
+      <h2 id="viewed-movie-list-title">Bekeken Films en Series</h2>
+    </div>
+    <div class="section-body">
+      <ul id="viewed-movie-list"></ul>
+    </div>
+  </section>      
+
+
+  <script src="index.js"></script>
+</body>
+</html>
